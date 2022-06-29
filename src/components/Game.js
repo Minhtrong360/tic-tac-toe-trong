@@ -42,6 +42,7 @@ function Game() {
   //Handle player
   const handleClick = (i) => {
     const newSquares = squares.slice();
+    console.log("newSq", newSquares);
 
     if (calculateWinner(newSquares) || newSquares[i]) {
       return;
